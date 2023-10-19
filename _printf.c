@@ -27,9 +27,10 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (*format == '%')
+			if (*format == '\0')
+				break;
+			else if (*format == '%')
 			{
-				_putchar('%');
 				_putchar('%');
 			}
 			else if (*format == 'c')
@@ -53,7 +54,7 @@ int _printf(const char *format, ...)
 	--*ptr;
 	va_end(args);
 
-	/*printf("\nmylength: %d", count);*/
+	printf("\nmylength: %d", count);
 
 	return (*ptr);
 }
