@@ -18,7 +18,10 @@ int _printf(const char *format, ...)
 			if (*format == 'c')
 				_putchar(va_arg(args, int));
 			else if (*format == 'd')
-				_putchar(va_arg(args, int) + '0');
+			{
+				n = va_arg(args, int);
+				count = _printint(n, count);
+			}
 		}
 		else
 			_putchar(*format);
