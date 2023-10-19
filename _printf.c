@@ -2,7 +2,10 @@
 
 int _printf(const char *format, ...)
 {
-	char *c;
+	int c;
+	char *str;
+	int n;
+
 	va_list args;
 	va_start(args, format);
 
@@ -10,11 +13,12 @@ int _printf(const char *format, ...)
 	{
 		if (*format == '%')
 		{
-			c = va_arg(args, char);
 			format++;
-			fshandler(char *format, c);
+			if (*format == 'c')
+				_putchar(va_arg(args, int));
 		}
-		_putchar(*format);
+		else
+			_putchar(*format);
 		format++;
 	}
 	va_end(args);
