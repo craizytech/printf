@@ -44,6 +44,15 @@ int _printf(const char *format, ...)
 				*ptr = _printstr(str, ptr);
 			}
 		}
+		else if (*format == '\\')
+		{
+			format++;
+			if (*format == 'n')
+				_putchar('\n');
+			else 
+				_putchar('\\');
+			++*ptr;
+		}
 		else
 			_putchar(*format);
 		format++;
