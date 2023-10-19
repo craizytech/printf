@@ -49,10 +49,9 @@ int _printf(const char *format, ...)
 		format++;
 		++*ptr;
 	}
-	/* --*ptr; */
 	va_end(args);
 
-	printf("\nmylength: %d", count);
+	/*printf("\nmylength: %d", count);*/
 
 	return (*ptr);
 }
