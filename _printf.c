@@ -52,6 +52,11 @@ int _printf(const char *format, ...)
 				}
 				*ptr = _printstr(str, ptr);
 			}
+			else
+			{
+				_putchar('%');
+				_putchar(*format);
+			}
 		}
 		else if (*format == '\\')
 		{
@@ -68,8 +73,6 @@ int _printf(const char *format, ...)
 		++*ptr;
 	}
 	va_end(args);
-
-	/* printf("\nmylength: %d", count); */
 
 	return (*ptr);
 }

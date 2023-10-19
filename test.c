@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	_printf("css%ccs%scscscs", 'T', "Test");
+	_printf("%K\n");
 	return (0);
 }
