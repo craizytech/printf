@@ -1,8 +1,14 @@
 #include "main.h"
 
+/**
+ * _printf - prints a formatted string
+ * @formart: pointer to a constant string
+ * @:...: variable number of argumets
+ * Return: count(number of bytes printed to the screen)
+ */
+
 int _printf(const char *format, ...)
 {
-	int c;
 	char *str;
 	int n;
 	int count = 0;
@@ -33,9 +39,10 @@ int _printf(const char *format, ...)
 		format++;
 		count++;
 	}
+	count--;
 	va_end(args);
 
-	printf("\n%d", count);
+	printf("\nmylength: %d", count);
 
 	return (count);
 }

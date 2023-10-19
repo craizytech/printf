@@ -14,4 +14,5 @@ int _printstr(char *str, int count)
 		count++;
 		str++;
 	}
+	return (count);
 }
