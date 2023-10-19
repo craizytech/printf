@@ -8,6 +8,7 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-void fshandler(char *format, char c);
+int _printstr(char *str, int count);
+int _printint(int n, int count);
 
 #endif

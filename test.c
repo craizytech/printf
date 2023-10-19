@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	_printf("Name starts with %c", 'E');
+	_printf("I am %d years old", 2);
 	return (0);
 }
