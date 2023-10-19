@@ -27,7 +27,12 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (*format == 'c')
+			if (*format == '%')
+			{
+				_putchar('%');
+				_putchar('%');
+			}
+			else if (*format == 'c')
 				_putchar(va_arg(args, int));
 			else if (*format == 'd')
 			{
