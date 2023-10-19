@@ -2,5 +2,6 @@
 
 void fshandler(char *formart)
 {
-	if (*format == "c");
+	if (*format == "c")
+
 }

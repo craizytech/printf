@@ -2,15 +2,20 @@
 
 int _printf(const char *format, ...)
 {
+	va_list args;
+	va_start(args, format);
+
 	while (*format)
 	{
 		if (*format == "%")
 		{
-			formart++;
-			fshandler(char *formart);
+			format++;
+			fshandler(char *format, va_arg(args, char);
 		}
 		_putchar(*format);
 		format++;
 	}
+	va_end(args);
+
 	return (0);
 }

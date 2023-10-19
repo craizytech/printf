@@ -8,6 +8,6 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-void fshandler(char *formar);
+void fshandler(char *format, char c);
 
 #endif
