@@ -11,6 +11,7 @@ int _printf(const char *format, ...)
 {
 	char *str;
 	int n;
+	int c;
 	int *ptr;
 	int count = 0;
 	va_list args;
@@ -32,7 +33,10 @@ int _printf(const char *format, ...)
 				_putchar('%');
 			}
 			else if (*format == 'c')
-				_putchar(va_arg(args, int));
+			{
+				c = va_arg(args, int);
+				_putchar(c);
+			}
 			else if (*format == 'd')
 			{
 				n = va_arg(args, int);
@@ -41,6 +45,11 @@ int _printf(const char *format, ...)
 			else if (*format == 's')
 			{
 				str = va_arg(args, char *);
+				if (str == NULL)
+				{
+					format++;
+					continue;
+				}
 				*ptr = _printstr(str, ptr);
 			}
 		}
@@ -60,7 +69,7 @@ int _printf(const char *format, ...)
 	}
 	va_end(args);
 
-	/*printf("\nmylength: %d", count);*/
+	/* printf("\nmylength: %d", count); */
 
 	return (*ptr);
 }
