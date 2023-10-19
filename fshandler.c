@@ -1,7 +1,7 @@
 #include "main.h"
 
-void fshandler(char *formart)
+void fshandler(char *format, char c)
 {
-	if (*format == "c")
-
+	if (*format == 'c')
+		return;
 }
