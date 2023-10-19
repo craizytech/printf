@@ -11,6 +11,7 @@ int _printf(const char *format, ...)
 {
 	char *str;
 	int n;
+	int *ptr;
 	int count = 0;
 	va_list args;
 
@@ -18,6 +19,8 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(args, format);
+	ptr = &count;
+
 
 	while (*format)
 	{
@@ -29,23 +32,23 @@ int _printf(const char *format, ...)
 			else if (*format == 'd')
 			{
 				n = va_arg(args, int);
-				count = _printint(n, count);
+				*ptr = _printint(n, ptr);
 			}
 			else if (*format == 's')
 			{
 				str = va_arg(args, char *);
-				count = _printstr(str, count);
+				*ptr = _printstr(str, ptr);
 			}
 		}
 		else
 			_putchar(*format);
 		format++;
-		count++;
+		++*ptr;
 	}
-	count--;
+	--*ptr;
 	va_end(args);
 
 	/*printf("\nmylength: %d", count);*/
 
-	return (count);
+	return (*ptr);
 }

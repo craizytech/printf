@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _printstr(char *str, int count)
+int _printstr(char *str, int *ptr)
 {
 	if (str == NULL)
 	{
@@ -11,8 +11,8 @@ int _printstr(char *str, int count)
 	while (*str)
 	{
 		_putchar(*str);
-		count++;
+		++*ptr;
 		str++;
 	}
-	return (count);
+	return (*ptr);
 }
