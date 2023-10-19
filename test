@@ -1,0 +1,10 @@
+#include "main.h"
+
+int main(void)
+{
+	char *s = "My Name is Eammon and I am 21 years old";
+
+	printf("strlen: %d\n", strlen(s));
+	_printf("My Name is %s and I am %d years old", "Eammon", 21);
+	return (0);
+}
