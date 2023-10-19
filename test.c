@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	char *s = "My initials are E and A and I am 21 years old";
+	char *s = "My Name is Eammon.";
 
 	printf("strlen: %d\n", strlen(s));
-	_printf("My initials are %c and %c and I am %d years old",'E', 'K', 21);
+	_printf("My Name is %s.", "Eammon");
 	return (0);
 }
