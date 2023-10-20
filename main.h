@@ -17,5 +17,8 @@ int print_37(void);
 int print_i(va_list args);
 int print_d(va_list args);
 int print_b(va_list args);
+int print_ui(va_list args);
+int print_o(va_list args);
+void reverse_array(int *a, int n);
 
 #endif
