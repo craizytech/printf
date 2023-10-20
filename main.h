@@ -11,5 +11,8 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list args);
 int print_str(va_list args);
+int _strlen(char *s);
+int _strlenconst(const char *s);
+int print_37(void);
 
 #endif
