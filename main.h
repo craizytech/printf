@@ -25,6 +25,8 @@ int print_H(va_list args);
 int print_S(va_list args);
 int print_HS(unsigned int n);
 int print_p(va_list args);
-int print_int_hex(long int p);
+int print_int_hex(unsigned long int p);
+int print_r(va_list args);
+int print_r13(va_list args);
 
 #endif
