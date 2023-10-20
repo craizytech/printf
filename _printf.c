@@ -9,7 +9,11 @@
 int _printf(const char *format, ...)
 {
 	getmatch arr[] = {
-		{"%c", print_char}, {"%s", print_str}, {"%%", print_37}, {"%d", print_d}, {"%i", print_i}, {"%r", print_r}, {"%R", print_r13}, {"%b", print_b},{"%ui", print_ui}, {"%o", print_o}, {"%x", print_h}, {"%X", print_H}, {"%S", print_S}, {"%p", print_p}
+		{"%c", print_char}, {"%s", print_str}, {"%%", print_37},
+		{"%d", print_d}, {"%i", print_i}, {"%r", print_r},
+		{"%R", print_r13}, {"%b", print_b}, {"%ui", print_ui},
+		{"%o", print_o}, {"%x", print_h}, {"%X", print_H},
+		{"%S", print_S}, {"%p", print_p}
 	};
 
 	va_list args;

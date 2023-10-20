@@ -28,7 +28,7 @@ int print_o(va_list args)
 		nums[i] = temp % 8;
 		temp /= 8;
 	}
-	
+
 	for (i = c - 1; i >= 0; i--)
 		_putchar(nums[i] + '0');
 
