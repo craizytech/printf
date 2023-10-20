@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * print_h - prints decimal digits in hexadecimal form
+ * print_int_hex - prints decimal digit in hexadecimal form
  * @args: variadic arguments
  * Return: the number of integers printed
  */
 
-int print_h(va_list args)
+int print_int_hex(unsigned long int n)
 {
-	int i, c = 0;
-	unsigned int n = va_arg(args, unsigned int);
-	unsigned int temp = n;
-	int *nums;
+	long int i, c = 0;
+	unsigned long int temp = n;
+	long int *nums;
 
 	/* check if already divisible by 16 */
 	while (n / 16 != 0)
@@ -20,7 +19,7 @@ int print_h(va_list args)
 		c++;
 	}
 	c++;
-	nums = malloc(sizeof(int) * c);
+	nums = malloc(sizeof(long int) * c);
 	if (nums == NULL)
 		return (NULL);
 	for (i = 0; i < c; i++)
