@@ -29,3 +29,12 @@ int print_S(va_list args)
 				len++
 			}
 			len += print_HS(t);
+		}
+		else
+		{
+			_putchar(str[i]);
+			len++;
+		}
+	}
+	return (len);
+}
