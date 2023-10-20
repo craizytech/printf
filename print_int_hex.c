@@ -20,15 +20,14 @@ int print_int_hex(unsigned long int n)
 	}
 	c++;
 	nums = malloc(sizeof(long int) * c);
-	if (nums == NULL)
-		return (NULL);
+
 	for (i = 0; i < c; i++)
 	{
 		nums[i] = temp % 16;
 		temp /= 16;
 	}
-	reverse_array(nums, c);
-	for (i = 0; i < c; i++)
+
+	for (i = c - 1; i >= c; i--)
 	{
 		if (nums[i] > 9)
 			nums[i] += 39;

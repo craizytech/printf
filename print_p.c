@@ -16,7 +16,7 @@ int print_p(va_list args)
 	if (ptr == NULL)
 	{
 		for (i = 0; n[i] != '\0'; i++)
-			_putchar(s[i]);
+			_putchar(n[i]);
 		return (i);
 	}
 	p = (unsigned long int)ptr;

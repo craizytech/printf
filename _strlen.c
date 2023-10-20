@@ -20,9 +20,9 @@ int _strlen(char *s)
  * @s: pointer to the constant string
  * Return: the length
  */
-int _strlenconst(const char s)
+int _strlenconst(const char *s)
 {
-	int n;
+	int n = 0;
 
 	while (*(s + n) != '\0')
 		n++;

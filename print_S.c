@@ -12,9 +12,9 @@ int print_S(va_list args)
 	int i, len = 0;
 	int t;
 
-	str = var_arg(args, char *);
-	if (str == null)
-		s = "(null)";
+	str = va_arg(args, char *);
+	if (str == NULL)
+		str = "(null)";
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] < 32 || str[i] >= 127)
@@ -26,7 +26,7 @@ int print_S(va_list args)
 			if (t < 16)
 			{
 				_putchar('0');
-				len++
+				len++;
 			}
 			len += print_HS(t);
 		}

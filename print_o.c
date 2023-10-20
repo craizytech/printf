@@ -23,15 +23,15 @@ int print_o(va_list args)
 
 	nums = malloc(sizeof(int) * c);
 
-	for (i = 0; < c; i++)
+	for (i = 0; i < c; i++)
 	{
 		nums[i] = temp % 8;
 		temp /= 8;
 	}
-	reverse_array(nums, c);
-
-	for (i = 0; i < c; i++)
+	
+	for (i = c - 1; i >= 0; i--)
 		_putchar(nums[i] + '0');
+
 	free(nums);
 	return (c);
 }

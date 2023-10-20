@@ -21,15 +21,13 @@ int print_h(va_list args)
 	}
 	c++;
 	nums = malloc(sizeof(int) * c);
-	if (nums == NULL)
-		return (NULL);
+
 	for (i = 0; i < c; i++)
 	{
 		nums[i] = temp % 16;
 		temp /= 16;
 	}
-	reverse_array(nums, c);
-	for (i = 0; i < c; i++)
+	for (i = c - 1; i >= 0; i--)
 	{
 		if (nums[i] > 9)
 			nums[i] += 39;
