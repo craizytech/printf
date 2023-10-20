@@ -31,7 +31,7 @@ int print_h(va_list args)
 	reverse_array(nums, c);
 	for (i = 0; i < c; i++)
 	{
-		if (nums[i] > 0)
+		if (nums[i] > 9)
 			nums[i] += 39;
 		_putchar(nums[i] + '0');
 	}
