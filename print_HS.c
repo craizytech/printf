@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * print_H - prints decimal digits in hexadecimal form(UPPERCASE)
+ * print_HS - prints decimal digits in hexadecimal form(UPPERCASE) for S
  * @args: variadic arguments
  * Return: the number of integers printed
  */
 
-int print_H(va_list args)
+int print_HS(unsigned int n)
 {
 	int i, c = 0;
-	unsigned int n = va_arg(args, unsigned int);
 	unsigned int temp = n;
 	int *nums;
 

@@ -23,5 +23,6 @@ void reverse_array(int *a, int n);
 int print_h(va_list args);
 int print_H(va_list args);
 int print_S(va_list args);
+int print_HS(unsigned int n);
 
 #endif
