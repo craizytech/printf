@@ -3,7 +3,7 @@
 /**
  * print_o - prints decimal numbers in octal
  * @args: variadic arguments
- * Returns: number of digits
+ * Return: number of digits
  */
 
 int print_o(va_list args)

@@ -2,7 +2,7 @@
 
 /**
  * print_int_hex - prints decimal digit in hexadecimal form
- * @args: variadic arguments
+ * @n: converts integer to hexadecimal (used in print_p.c)
  * Return: the number of integers printed
  */
 

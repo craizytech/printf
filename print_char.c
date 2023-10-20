@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * print_char - prints a charater in the variable arguments
  * @args: variable argument(keeps on changing)
  * Return: 1

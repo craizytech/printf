@@ -24,10 +24,10 @@ int print_d(va_list args)
 	}
 	if (num > 0)
 	{
-		while (num /10 != 0)
+		while (num / 10 != 0)
 		{
 			exp *= 10;
-			num /=num;
+			num /= num;
 		}
 		num = n;
 		while (exp > 0)
@@ -36,8 +36,8 @@ int print_d(va_list args)
 			_putchar(digit + '0');
 			num = num - (digit * exp);
 			exp = exp / 10;
-			i++;}
-
+			i++;
+		}
 	}
 	_putchar(last + '0');
 

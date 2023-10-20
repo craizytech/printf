@@ -2,7 +2,7 @@
 
 /**
  * print_S - prints a custom conversion specifier S corresponding to ..
- * a string 
+ * a string
  * @args: variadic arguments
  * Return: number of characters printed
  */

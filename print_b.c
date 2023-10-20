@@ -8,7 +8,7 @@
 int print_b(va_list args)
 {
 	int f = 0;
-	int 1, a = 1, b;
+	int i, a = 1, b;
 	int count = 0;
 	unsigned int n = va_arg(args, unsigned int);
 	unsigned int p;

@@ -11,6 +11,7 @@ int print_r13(va_list args)
 	char *str = va_arg(args, char *);
 	char alphabet[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
 	char rot13key[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
+
 	if (str == NULL)
 		str = "(null)";
 	for (i = 0; str[i]; i++)

@@ -2,7 +2,7 @@
 
 /**
  * print_HS - prints decimal digits in hexadecimal form(UPPERCASE) for S
- * @args: variadic arguments
+ * @n: integer to be converted to hex for the unprintable chars in ascii
  * Return: the number of integers printed
  */
 
