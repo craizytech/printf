@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_o - prints decimal numbers in octal
+ * @args: variadic arguments
+ * Returns: number of digits
+ */
+
 int print_o(va_list args)
 {
 	int i, c = 0;
